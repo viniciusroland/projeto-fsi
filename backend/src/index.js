@@ -12,5 +12,5 @@ app.post("/user", UserController.create)
 app.patch("/user/:id", UserController.update)
 app.delete("/user/:id", UserController.delete)
 
-const port = 3000
+const port = 4000
 app.listen(port, () => console.log(`rodando em: localhost:${port}`))
