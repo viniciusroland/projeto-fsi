@@ -7,3 +7,5 @@ Primeiro, precisa instalar as dependencias:
 Depos, rodar o projeto
 
 ### `yarn start`
+
+Abrir url: localhost:3000
