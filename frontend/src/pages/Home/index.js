@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import musicLogo from '../../assets/Spotify-logo.png'
+import api from '../../services/api'
 import {
   Header,
   Container,
@@ -7,6 +8,16 @@ import {
 } from './styles'
 
 export default function Home() {
+  const [users, setUsers] = useState([])
+  console.log(users)
+  useEffect(() => {
+    async function fetchUsers() {
+      const response = await api.get("/users")
+      if (response.status === 200) setUsers(response.data)
+    }
+    fetchUsers();
+  }, [])
+
   return (
     <>
       <Header>
