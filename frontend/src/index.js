@@ -11,7 +11,6 @@ function App() {
     <>
       <BrowserRouter>
         <Header/>
-        <Home/>
         <GlobalStyle />
         <Routes />
       </BrowserRouter>

@@ -22,9 +22,11 @@ export default function Home() {
       <WelcomeMessage>
         <h1>Conheca pessoas a partir da música.</h1>
         <h2>A primeira plataforma que conecta pessoas relacionando seus gostos musicais.</h2>
-        <button>
-          <p>quero conhecer {emoji}</p>
-        </button>
+        <a href="http://localhost:4000/auth_spotify">
+          <button>
+            <p>quero conhecer {emoji}</p>
+          </button>
+        </a>
       </WelcomeMessage>
     </Container>
   )
