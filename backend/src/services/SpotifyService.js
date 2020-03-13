@@ -21,7 +21,7 @@ module.exports = {
       + '&redirect_uri=http://localhost:3000'
 
     console.log(url)
-    const clientIDBase64 = Buffer.from(CLIENT_ID).toString('base64')
+    const clientIDBase64 = Buffer.from(CLIENT_ID + ":" + CLIENT_SECRET).toString('base64')
     res.header("Authorization", "Basic " + clientIDBase64)
     console.log(res)
     res.redirect(url)
